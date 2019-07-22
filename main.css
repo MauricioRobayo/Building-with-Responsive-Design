@@ -26,3 +26,24 @@ nav > ul {
   padding: 8px;
   background-position: -848px -848px;
 }
+main{
+  display: grid;
+}
+#featured-articles{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 2fr;
+}
+#featured-articles article:first-child{
+  background-color: green; 
+  grid-row-start: span 2;
+}
+#featured-articles article:last-child{
+  background-color: lightblue; 
+}
+#temp{ background-color: yellow;}
+#latest ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 270px))
+  
+}
