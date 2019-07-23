@@ -78,7 +78,44 @@ main{
 #temp{ background-color: yellow;}
 #latest ul{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 270px)) 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+#latest ul li{
+  width: 302px;
+  height: 246px;
+}
+#latest li div{
+  height: 141px;
+  width: 282px;
+  background-size: contain;
+}
+
+#latest-1{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Chris-Stokel-Walker-hed-513x270.jpg");
+}
+
+#latest-2{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/fbot-botnet-good-bitcoin-cryptocurrency-cryptojacking-malware-480x270.jpg");
+}
+#latest-3{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design-4-1-516x270.png");
+}
+#latest-4{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/h3JjGh0-540x270.jpg");
+}
+#latest-5{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/zuckerberg-cryptocurrency-libra-blockchain-marketing-coin-con-scams-515x270.jpg");
+}
+#latest-6{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Emojibot-514x270.jpg");
+}
+#latest-7{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/atT-blockchain-cryptocurrency-bitpay-bitcoin-ethereum-litecoin-cash-payment-480x270.jpg");
+}
+
+#latest-8{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/openai-microsoft-azure-elon-musk-478x270.jpg");
 }
 @media only screen and (min-width: 1025px) {
   nav {
