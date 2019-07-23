@@ -78,11 +78,11 @@ nav ul li {
   border-left: 1px solid #eee;
 }
 main{
-  display: grid;
-  margin: auto;
+  width:100%;
 }
 #main-content-wrapper {
   max-width: 1152px;
+  margin: auto;
 }
 #featured-articles{
   display: grid;
@@ -139,6 +139,12 @@ main{
 
 #latest-8{
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/openai-microsoft-azure-elon-musk-478x270.jpg");
+}
+.investment-card-name{
+  background-color:orangered;
+}
+.investment-card-funding{
+  background: rgba(255,68,34,.08)
 }
 @media only screen and (min-width: 1025px) {
   nav {
