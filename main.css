@@ -14,10 +14,18 @@ nav ul {
   display: flex;
   grid-column-start: span 2;
 }
+.secondary-menu {
+  display: flex;
+  align-items: center;
+}
 nav > ul {
   background-color: #131313;
   color: #999;
-  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  padding-left: 16px;
 }
 .nav-mob-toggle {
   position: relative;
@@ -30,8 +38,14 @@ nav > ul {
     left: 14px;
     margin-top: -1px;
     position: absolute;
-    top: 50%;
+    top: 24px;
     width: 20px;
+}
+.nav-mob-toggle span:first-child {
+  transform: translateY(-6px);
+}
+.nav-mob-toggle span:last-child {
+  transform: translateY(6px);
 }
 .tnw-logo {
   width: 106px;
@@ -48,20 +62,27 @@ nav > ul {
 .icon {
   height: 16px;
   width: 16px;
-  background-color: palegreen;
-  background-image: url(./icons-sprite.svg);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
 }
 .search-icon {
   padding: 16px;
-  background-position: -848px -848px;
+  background-position: -816px -816px;
+  border-left: 1px solid #eee;
+  width: 16px;
+  height: 16px;
+  border: 1px solid red;
 }
 .hamburger-menu {
-  padding: 16px;
-  border: 1px solid violet;
-
+  height: 48px;
+  width: 48px;
+  border-left: 1px solid #eee;
 }
 main{
   display: grid;
+  margin: auto;
+}
+#main-content-wrapper {
+  max-width: 1152px;
 }
 #featured-articles{
   display: grid;
@@ -78,17 +99,19 @@ main{
 #temp{ background-color: yellow;}
 #latest ul{
   display: grid;
+  grid-gap: 16px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
 }
 #latest ul li{
-  width: 302px;
+  max-width: 302px;
   height: 246px;
 }
 #latest li div{
   height: 141px;
-  width: 282px;
-  background-size: contain;
+  max-width: 282px;
+  background-size: cover;
+  background-position: center;
 }
 
 #latest-1{
@@ -125,6 +148,11 @@ main{
     display: none;
   }
 }
+@media only screen and (max-width: 1025px) {
+  #latest ul{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media only screen and (max-width: 768px) {
   nav {
     display: flex;
@@ -136,6 +164,9 @@ main{
   }
   .mobile-buttons {
     display: flex;
+  }
+  #latest ul{ 
+    display: block;
   }
 }
 @media only screen and (min-width: 768px) {
