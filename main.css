@@ -2,19 +2,48 @@ body {
   margin: 0;
   padding: 0;
 }
+nav {
+  display: grid;
+  grid-template-columns: 106px 1fr 48px;
+  grid-template-rows: 32px 48px;
+}
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  grid-column-start: span 2;
 }
 nav > ul {
   background-color: #131313;
   color: #999;
   padding: 8px 16px;
 }
+.nav-mob-toggle {
+  position: relative;
+}
+.nav-mob-toggle span {
+  transition: .4s;
+    background-color: #f42;
+    display: block;
+    height: 2px;
+    left: 14px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
 .tnw-logo {
-  display: none;
+  width: 106px;
+  background-color: black;
+  grid-row-start: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tnw-logo img {
+  width: 66px;
+  height: 16px;
 }
 .icon {
   height: 16px;
@@ -23,8 +52,13 @@ nav > ul {
   background-image: url(./icons-sprite.svg);
 }
 .search-icon {
-  padding: 8px;
+  padding: 16px;
   background-position: -848px -848px;
+}
+.hamburger-menu {
+  padding: 16px;
+  border: 1px solid violet;
+
 }
 main{
   display: grid;
@@ -44,6 +78,31 @@ main{
 #temp{ background-color: yellow;}
 #latest ul{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 270px))
-  
+  grid-template-columns: repeat(auto-fit, minmax(200px, 270px)) 
+}
+@media only screen and (min-width: 1025px) {
+  nav {
+    grid-template-columns: 1fr 48px;
+  }
+  .tnw-logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between
+  }
+  nav > ul,
+  .secondary-menu { 
+    display: none;
+  }
+  .mobile-buttons {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hamburger-menu { 
+    display: none;
+  }
 }
