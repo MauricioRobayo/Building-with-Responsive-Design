@@ -90,6 +90,7 @@ main{
 #main-content-wrapper {
   max-width: 1152px;
   margin: auto;
+  padding: 18px;
 }
 #featured-articles{
   display: grid;
@@ -151,6 +152,7 @@ main{
   display: flex;
 }
 .latest-funding-articles > article {
+  flex: 1 1 100%;
   height: 300px;
   background-color: rgb(255, 250, 248);
 }
@@ -179,7 +181,7 @@ main{
 }
 .investment-card-funding h4 {
   margin: 0;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 18px;
 }
 .investment-card-funding h5 {
@@ -197,11 +199,11 @@ main{
 .latest-funding-content ul {
   list-style: none;
   border-top: 1px solid rgba(255, 68, 34, 0.25);
-  padding: 16px 0 8px 16px;
+  padding: 16px 16px 8px 16px;
   font-size: 14px;
 }
 .latest-funding-content > a {
-  padding: 8px 0 0 16px;
+  padding: 8px 16px 0 16px;
 }
 .latest-funding-content > a > span {
   margin-left: 8px;
@@ -253,7 +255,25 @@ main{
 .latest-funding-articles article:last-child{
   margin-right: 0px;
 }
-
+.more-content-main-article,
+.more-content-feature-article {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.more-content-main-article article {
+  position: relative;
+}
+.more-content-main-article article header{
+  color: white;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+.more-content-main-article article header h5,
+.more-content-main-article article header h3 {
+  margin: 0;
+}
 
 @media only screen and (min-width: 1025px) {
   nav {
@@ -266,6 +286,12 @@ main{
 @media only screen and (max-width: 1025px) {
   #latest ul{
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .latest-funding-articles article:nth-last-child(2){
+    margin-right: 0;
+  }
+  .latest-funding-articles article:last-child{
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -282,6 +308,13 @@ main{
   }
   #latest ul{ 
     display: block;
+  }
+  .latest-funding-articles {
+    display: block;
+  }
+  .latest-funding-articles > article {
+    margin: 0 0 18px 0;
+    height: auto;
   }
 }
 @media only screen and (min-width: 768px) {
