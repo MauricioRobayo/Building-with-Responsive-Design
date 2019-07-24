@@ -97,6 +97,20 @@ main{
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 2fr;
 }
+#featured-articles article {
+  position: relative;
+}
+.featured-article-image {
+  height: 147.5px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoinsv-796x448.jpg);
+  background-size: cover;
+}
+#featured-articles article:first-child .featured-article-image {
+  height: 295px;
+}
 #featured-articles article:first-child{
   background-color: green; 
   grid-row-start: span 2;
@@ -266,27 +280,20 @@ main{
 }
 .more-content-main-article article .more-content-image {
   height: 295px;
-  width: 393px;
   background: linear-gradient(
     rgba(0, 0, 0, 0), 
     rgba(0, 0, 0, 0.85)
   ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/slack-ram-memory-faster-performance-desktop-368x276.jpg);
-  background-size: contain;
+  background-size: cover;
 }
-.more-content-main-article article header {
+.header-inside-img {
   color: white;
   position: absolute;
   bottom: 16px;
   left: 16px;
   width: 276px;
 }
-.image-gradient {
-  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
-  background-size: 368px 276px;
-  width: 368px;
-  height: 276px;
-}
-.more-content-main-article article header a {
+.header-inside-img a {
   color: white;
   text-decoration: none;
 }
@@ -297,13 +304,16 @@ main{
 .more-content-main-article article header h3 {
   font-size: 20px;
 }
-.more-content-main-article article header ul {
+.header-inside-img ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   font-size: 14px;
   margin-top: 8px;
+}
+.header-inside-img ul li {
+  padding-right: 8px;
 }
 .more-content-feature-article article {
   display: flex;
@@ -319,9 +329,10 @@ main{
   height: 96px;
   margin-left: -40px;
 }
-.more-content section{
-  flex-basis: 33.3333333333%;
-max-width: 33.3333333333%;
+.more-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 .more-content section h2::after{
   background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
@@ -399,6 +410,9 @@ width: 4px;
   .latest-funding-articles article:last-child{
     display: none;
   }
+  .more-content {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (max-width: 768px) {
   nav {
@@ -421,6 +435,9 @@ width: 4px;
   .latest-funding-articles > article {
     margin: 0 0 18px 0;
     height: auto;
+  }
+  .more-content {
+    grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 768px) {
