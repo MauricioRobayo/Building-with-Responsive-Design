@@ -264,16 +264,61 @@ main{
 .more-content-main-article article {
   position: relative;
 }
-.more-content-main-article article header{
+.more-content-main-article article .more-content-image {
+  height: 295px;
+  width: 393px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/slack-ram-memory-faster-performance-desktop-368x276.jpg);
+  background-size: contain;
+}
+.more-content-main-article article header {
   color: white;
   position: absolute;
   bottom: 16px;
   left: 16px;
+  width: 276px;
+}
+.image-gradient {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 368px 276px;
+  width: 368px;
+  height: 276px;
+}
+.more-content-main-article article header a {
+  color: white;
+  text-decoration: none;
 }
 .more-content-main-article article header h5,
 .more-content-main-article article header h3 {
   margin: 0;
 }
+.more-content-main-article article header h3 {
+  font-size: 20px;
+}
+.more-content-main-article article header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.more-content-feature-article article {
+  display: flex;
+  justify-content: space-between;
+}
+.more-content-feature-article-img-wrapper {
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+}
+.more-content-feature-article-img-wrapper img {
+  height: 96px;
+  margin-left: -40px;
+}
+
 .more-content section h2::after{
   background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
   background-size: 16px 16px;
@@ -285,6 +330,10 @@ main{
   content: "";
   margin-left: 4px;
 }
+.more-content > section > ul {
+  padding: 0;
+  margin: 0;
+}
 .more-content-title{
   text-decoration: none;
   color: #f42;
@@ -293,6 +342,9 @@ main{
 .more-content-feature-article{
   background-color: rgba(255,68,34,.06);
   color: #f42;
+}
+.more-content-feature-article header {
+  margin: 16px;
 }
 .more-content-feature-article h5{
   font-family: Shentox,sans-serif;
