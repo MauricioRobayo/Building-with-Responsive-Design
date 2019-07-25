@@ -111,13 +111,29 @@ main{
   box-sizing: border-box;
   position: relative;
 }
-.featured-article-image {
-  height: 143.5px;
+#featured-article-image-1 {
   background: linear-gradient(
     rgba(0, 0, 0, 0), 
     rgba(0, 0, 0, 0.85)
   ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoinsv-796x448.jpg);
   background-size: cover;
+}
+#featured-article-image-2 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/moralbehavior1200B-796x417.png);
+  background-size: cover;
+}
+#featured-article-image-3 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/deliveroo2-796x448.jpg);
+  background-size: cover;
+}
+.featured-article-image {
+  height: 143.5px;
 }
 #featured-articles article:first-child .featured-article-image {
   height: 295px;
@@ -154,6 +170,7 @@ main{
   padding: 0;
   margin: 0;
   list-style: none;
+  align-items: baseline;
 }
 .responsive-grid ul li {
   padding-right: 16px;
@@ -175,6 +192,16 @@ main{
   max-width: 282px;
   background-size: cover;
   background-position: center;
+}
+.latest-deals .responsive-grid li div:first-child{
+  height: 185px;
+}
+.list-price {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.discount-price {
+  color: #555;
 }
 #latest-news-1{
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Chris-Stokel-Walker-hed-513x270.jpg");
@@ -202,7 +229,7 @@ main{
 }
 
 #latest-1{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Chris-Stokel-Walker-hed-513x270.jpg");
+  background-image: url("https://cdnp0.stackassets.com/36001da17ec0913f2c95b17dc5ce96e9a0979908/store/b43e5d8e1161e52ee6a07bb114885ea664e916a539ca3881f521dca8ed57/sale_20369_primary_image.jpg");
 }
 
 #latest-2{
@@ -549,6 +576,17 @@ box-sizing: border-box;
   .more-content {
     grid-template-columns: 1fr 1fr;
   }
+  #investment-card-header {
+    flex-direction: column;
+  }
+  #investment-card-header ul {
+    margin: 0;
+    margin-bottom: 32px;
+    padding-left: 0;
+  }
+  #investment-card-header ul li:first-child {
+    padding-left: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   nav {
@@ -591,6 +629,7 @@ box-sizing: border-box;
   .responsive-grid li {
     display: flex;
   }
+  .latest-deals .responsive-grid > li > div:first-child,
   .responsive-grid > li > div:first-child {
     flex: 0 0 75px;
     height: 75px;
