@@ -7,6 +7,10 @@ This is a project of the Main HTML/CSS curriculum at Microverse - @microverseinc
 
 [Assignment link](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/59540217/)
 
+![Screenshot](TheNextWebHighRes.jpg)
+![Screenshot](TheNextWebMediumRes.jpg)
+![Screanshot](TheNextWebLowRes.jpg)
+
 Authors:
 
 - [@BenjaminGarza](https://github.com/BenjaminGarza)
