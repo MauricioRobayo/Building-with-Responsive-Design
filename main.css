@@ -111,13 +111,29 @@ main{
   box-sizing: border-box;
   position: relative;
 }
-.featured-article-image {
-  height: 143.5px;
+#featured-article-image-1 {
   background: linear-gradient(
     rgba(0, 0, 0, 0), 
     rgba(0, 0, 0, 0.85)
   ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoinsv-796x448.jpg);
   background-size: cover;
+}
+#featured-article-image-2 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/moralbehavior1200B-796x417.png);
+  background-size: cover;
+}
+#featured-article-image-3 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/deliveroo2-796x448.jpg);
+  background-size: cover;
+}
+.featured-article-image {
+  height: 143.5px;
 }
 #featured-articles article:first-child .featured-article-image {
   height: 295px;
@@ -154,6 +170,7 @@ main{
   padding: 0;
   margin: 0;
   list-style: none;
+  align-items: baseline;
 }
 .responsive-grid ul li {
   padding-right: 16px;
@@ -176,46 +193,57 @@ main{
   background-size: cover;
   background-position: center;
 }
+.latest-deals .responsive-grid li div:first-child{
+  height: 185px;
+}
+.list-price {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.discount-price {
+  color: #555;
+}
 #latest-news-1{
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Chris-Stokel-Walker-hed-513x270.jpg");
 }
 #latest-news-2{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/fbot-botnet-good-bitcoin-cryptocurrency-cryptojacking-malware-480x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/libra-bet-launch-cryptocurrency-bet-money-libra-token-bitcoin-480x270.jpg");
 }
 #latest-news-3{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design-4-1-516x270.png");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/twitter-new-design-old-design-chrome-firefox-switch-478x270.jpg");
 }
 #latest-news-4{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/h3JjGh0-540x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/boardroom-confused-frustrated-difficult-blockchain-distributed-ledger-480x270.jpg");
 }
 #latest-news-5{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/zuckerberg-cryptocurrency-libra-blockchain-marketing-coin-con-scams-515x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/arque-tail-header-image-516x270.png");
 }
 #latest-news-6{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Emojibot-514x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/fujifilm-gfx100-loose-shutter-10000-100-megapixel-478x270.jpg");
 }
 #latest-news-7{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/atT-blockchain-cryptocurrency-bitpay-bitcoin-ethereum-litecoin-cash-payment-480x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/WhatsApp-payments-hed-513x270.jpg");
 }
 #latest-news-8{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/openai-microsoft-azure-elon-musk-478x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/mark_zuckerberg_skydiving2-405x270.jpg");
 }
 
 #latest-1{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Chris-Stokel-Walker-hed-513x270.jpg");
+  background-image: url("https://cdnp0.stackassets.com/36001da17ec0913f2c95b17dc5ce96e9a0979908/store/b43e5d8e1161e52ee6a07bb114885ea664e916a539ca3881f521dca8ed57/sale_20369_primary_image.jpg");
 }
 
 #latest-2{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/fbot-botnet-good-bitcoin-cryptocurrency-cryptojacking-malware-480x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/libra-bet-launch-cryptocurrency-bet-money-libra-token-bitcoin-480x270.jpg");
+
 }
 #latest-3{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design-4-1-516x270.png");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/feat-1-368x276.jpg");
 }
 #latest-4{
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/h3JjGh0-540x270.jpg");
 }
 #latest-5{
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/zuckerberg-cryptocurrency-libra-blockchain-marketing-coin-con-scams-515x270.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/arque-tail-header-image-516x270.png");
 }
 #latest-6{
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Emojibot-514x270.jpg");
@@ -350,14 +378,78 @@ main{
 .more-content-main-article article {
   position: relative;
 }
-.more-content-main-article article .more-content-image {
-  height: 295px;
+#more-content-image-1{
   background: linear-gradient(
     rgba(0, 0, 0, 0), 
     rgba(0, 0, 0, 0.85)
   ), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/slack-ram-memory-faster-performance-desktop-368x276.jpg);
+  height: 295px;
   background-size: cover;
 }
+#more-content-image-2{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/feat-1-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+#more-content-image-3{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Xbox-Update-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-4{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/AI-autocompleter-368x276.png");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-5{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200-368x276.png");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-6{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/800x600_businessman_covering_ears_gosphotodesign_22525853-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-7{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-8{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0), 
+    rgba(0, 0, 0, 0.85)
+  ), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/GTA-Online-Casino-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+
+
 .header-inside-img {
   color: white;
   position: absolute;
@@ -549,6 +641,23 @@ box-sizing: border-box;
   .more-content {
     grid-template-columns: 1fr 1fr;
   }
+  #investment-card-header {
+    flex-direction: column;
+  }
+  #investment-card-header ul {
+    margin: 0;
+    margin-bottom: 32px;
+    padding-left: 0;
+  }
+  #investment-card-header ul li:first-child {
+    padding-left: 0;
+  }
+  .header-inside-img h3 {
+    font-size: 15px;
+  }
+  #featured-articles article:first-child h3 {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 768px) {
   nav {
@@ -591,6 +700,7 @@ box-sizing: border-box;
   .responsive-grid li {
     display: flex;
   }
+  .latest-deals .responsive-grid > li > div:first-child,
   .responsive-grid > li > div:first-child {
     flex: 0 0 75px;
     height: 75px;
@@ -603,6 +713,7 @@ box-sizing: border-box;
     flex-direction: column;
     align-items: center;
   }
+ 
 }
 @media only screen and (min-width: 768px) {
   .hamburger-menu { 
