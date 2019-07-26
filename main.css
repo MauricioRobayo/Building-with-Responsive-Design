@@ -110,6 +110,27 @@ nav ul li {
 .icon--briefcase--dark {
   background-position: -48px -48px;
 }
+.icon--facebook--light {
+  background-position: -272px -272px;
+}
+.icon--twitter--light {
+  background-position: -1024px -1024px;
+}
+.icon--youtube--light {
+  background-position: -1280px -1280px;
+}
+.icon--instagram--light {
+  background-position: -416px -416px;
+}
+.icon--pinterest--light {
+  background-position: -672px -672px;
+}
+.icon--rss--light {
+  background-position: -816px -816px;
+}
+.icon--email--light {
+  background-position: -576px -576px;
+}
 .hamburger-menu {
   height: 48px;
   width: 48px;
