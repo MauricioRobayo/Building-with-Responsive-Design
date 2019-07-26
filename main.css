@@ -377,6 +377,23 @@ main {
   margin-right: 8px;
   list-style: none;
 }
+#footer-link-list li a {
+  color: #aaa;
+  text-decoration: none;
+}
+#footer-link-list li a:hover {
+  color: white;
+  text-decoration: none;
+}
+.footer-legal-logoTNW {
+  width: 37px;
+  height: 14px;
+}
+.footer-legal-logoStackPath {
+  width: 65px;
+  height: 14px;
+  margin-left: 8px;
+}
 #investment-card-header ul li {
   list-style: none;
   padding-left: 10px;
