@@ -4,9 +4,13 @@ body {
 }
 nav {
   display: grid;
-  grid-template-columns: 106px 1fr 48px;
-  grid-template-rows: 32px 48px;
+  grid-template-columns: 106px 1fr;
+  grid-template-rows: 32px;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+}
+nav a {
+  color: #999;
+  text-decoration: none;
 }
 nav ul {
   list-style: none;
@@ -15,10 +19,18 @@ nav ul {
   display: flex;
   grid-column-start: span 2;
 }
-#secondary-nav{
+#secondary-nav {
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 1;
+  height: 48px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secondary-nav-left {
+  display: flex;
 }
 .secondary-menu {
   display: flex;
@@ -27,12 +39,15 @@ nav ul {
 }
 nav > ul {
   background-color: #131313;
-  color: #999;
   display: flex;
   align-items: center;
 }
 nav ul li {
   padding-left: 16px;
+}
+.mobile-buttons {
+  background: white;
+  height: 48px;
 }
 .nav-mob-toggle {
   position: relative;
@@ -67,7 +82,7 @@ nav ul li {
 }
 .tnw-logo img {
   width: 66px;
-  height: 16px;
+  height: 48px;
 }
 .icon {
   height: 16px;
@@ -137,23 +152,21 @@ main {
   box-sizing: border-box;
   position: relative;
 }
-#featured-article-image-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
-    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoinsv-796x448.jpg);
-  background-size: cover;
-}
-#featured-article-image-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
-    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/moralbehavior1200B-796x417.png);
-  background-size: cover;
-}
-#featured-article-image-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
-    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/deliveroo2-796x448.jpg);
-  background-size: cover;
-}
 .featured-article-image {
   height: 143.5px;
+  overflow: hidden;
+}
+.featured-article-image::after {
+  display: block;
+  position: relative;
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
+}
+.featured-article-image img {
+  max-width: 100%;
 }
 #featured-articles article:first-child .featured-article-image {
   height: 295px;
@@ -649,7 +662,6 @@ main {
   }
   .mobile-buttons {
     display: flex;
-    position: fixed;
   }
   .responsive-grid {
     display: block;
