@@ -116,16 +116,16 @@ main {
 .more-content-main-article article {
   position: relative;
 }
-.latest-funding-articles article:last-child {
-  margin-right: 0px;
-}
-.latest-funding-articles article {
-  margin-right: 24px;
-}
 .latest-funding-articles > article {
   flex: 1 1 100%;
   height: 300px;
   background-color: rgb(255, 250, 248);
+}
+.latest-funding-articles article {
+  margin-right: 24px;
+}
+.latest-funding-articles article:last-child {
+  margin-right: 0px;
 }
 #featured-articles article {
   box-sizing: border-box;
@@ -349,6 +349,14 @@ main {
   color: #f42;
   align-items: baseline;
 }
+.header-inside-img ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  margin-top: 8px;
+}
 .more-content > section > ul {
   padding: 0;
   margin: 0;
@@ -462,14 +470,7 @@ main {
   left: 16px;
   margin-right: 8px;
 }
-.header-inside-img ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  font-size: 14px;
-  margin-top: 8px;
-}
+
 .more-content-feature-article-img-wrapper {
   width: 96px;
   height: 96px;
