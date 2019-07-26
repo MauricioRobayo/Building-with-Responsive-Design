@@ -164,11 +164,11 @@ main {
   margin: 0 0 18px 0;
   height: auto;
 }
-.responsive-grid li article {
-  display: flex;
-}
 .latest-funding-articles article {
   margin-right: 24px;
+}
+.responsive-grid li article {
+  display: flex;
 }
 .latest-funding-articles article:last-child {
   margin-right: 0px;
