@@ -251,13 +251,13 @@ main {
   padding-right: 16px;
 }
 
-.responsive-grid li div:first-child {
+.responsive-grid li img:first-child {
   height: 141px;
   max-width: 282px;
   background-size: cover;
   background-position: center;
 }
-.latest-deals .responsive-grid li div:first-child {
+.latest-deals .responsive-grid li img {
   height: 185px;
 }
 .list-price {
@@ -647,11 +647,15 @@ main {
   .responsive-grid li {
     display: flex;
   }
-  .responsive-grid > li > div:first-child,
-  .latest-deals .responsive-grid > li > div:first-child {
+  .responsive-grid li img {
+    object-fit: cover;
+  }
+  .responsive-grid > li > img:first-child,
+  .latest-deals .responsive-grid > li > img:first-child {
     flex: 0 0 75px;
     height: 75px;
     margin-right: 16px;
+    width: 75px;
   }
   .responsive-grid > li h4 {
     margin-top: 0;
