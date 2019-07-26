@@ -267,57 +267,6 @@ main {
 .discount-price {
   color: #555;
 }
-#latest-news-1 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Chris-Stokel-Walker-hed-513x270.jpg");
-}
-#latest-news-2 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/libra-bet-launch-cryptocurrency-bet-money-libra-token-bitcoin-480x270.jpg");
-}
-#latest-news-3 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/twitter-new-design-old-design-chrome-firefox-switch-478x270.jpg");
-}
-#latest-news-4 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/boardroom-confused-frustrated-difficult-blockchain-distributed-ledger-480x270.jpg");
-}
-#latest-news-5 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/arque-tail-header-image-516x270.png");
-}
-#latest-news-6 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/fujifilm-gfx100-loose-shutter-10000-100-megapixel-478x270.jpg");
-}
-#latest-news-7 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/01/WhatsApp-payments-hed-513x270.jpg");
-}
-#latest-news-8 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/mark_zuckerberg_skydiving2-405x270.jpg");
-}
-
-#latest-1 {
-  background-image: url("https://cdnp0.stackassets.com/36001da17ec0913f2c95b17dc5ce96e9a0979908/store/b43e5d8e1161e52ee6a07bb114885ea664e916a539ca3881f521dca8ed57/sale_20369_primary_image.jpg");
-}
-
-#latest-2 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/libra-bet-launch-cryptocurrency-bet-money-libra-token-bitcoin-480x270.jpg");
-}
-#latest-3 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/feat-1-368x276.jpg");
-}
-#latest-4 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/h3JjGh0-540x270.jpg");
-}
-#latest-5 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/arque-tail-header-image-516x270.png");
-}
-#latest-6 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Emojibot-514x270.jpg");
-}
-#latest-7 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/atT-blockchain-cryptocurrency-bitpay-bitcoin-ethereum-litecoin-cash-payment-480x270.jpg");
-}
-
-#latest-8 {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/openai-microsoft-azure-elon-musk-478x270.jpg");
-}
 #latest-deals-header {
   display: flex;
   justify-content: space-between;
