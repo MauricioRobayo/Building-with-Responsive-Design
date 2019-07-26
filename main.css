@@ -648,14 +648,14 @@ main {
   #featured-articles article:first-child .featured-article-image {
     height: 147.5px;
   }
-  .responsive-grid li {
+  .responsive-grid li article {
     display: flex;
   }
-  .responsive-grid li img {
+  .responsive-grid li article img {
     object-fit: cover;
   }
-  .responsive-grid > li > img:first-child,
-  .latest-deals .responsive-grid > li > img:first-child {
+  .responsive-grid > li > article > img:first-child,
+  .latest-deals .responsive-grid > li > article > img:first-child {
     flex: 0 0 75px;
     height: 75px;
     margin-right: 16px;
