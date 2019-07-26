@@ -15,9 +15,15 @@ nav ul {
   display: flex;
   grid-column-start: span 2;
 }
+#secondary-nav{
+  position: sticky;
+  top:0;
+  z-index: 1;
+}
 .secondary-menu {
   display: flex;
   align-items: center;
+  background-color: white;
 }
 nav > ul {
   background-color: #131313;
@@ -591,6 +597,7 @@ main {
   width: 40px;
   box-sizing: border-box;
 }
+
 @media only screen and (min-width: 1025px) {
   nav {
     grid-template-columns: 1fr 48px;
@@ -642,6 +649,7 @@ main {
   }
   .mobile-buttons {
     display: flex;
+    position: fixed;
   }
   .responsive-grid {
     display: block;
