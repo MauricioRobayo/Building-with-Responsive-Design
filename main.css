@@ -160,10 +160,12 @@ main {
 }
 .latest-funding-articles > article {
   flex: 1 1 100%;
-  height: 300px;
   background-color: rgb(255, 250, 248);
   margin: 0 0 18px 0;
   height: auto;
+}
+.responsive-grid li article {
+  display: flex;
 }
 .latest-funding-articles article {
   margin-right: 24px;
@@ -196,9 +198,6 @@ main {
 }
 .featured-article-image img {
   max-width: 100%;
-}
-.responsive-grid li article {
-  display: flex;
 }
 #featured-articles article:first-child .featured-article-image {
   height: 295px;
@@ -246,6 +245,27 @@ main {
   color: black;
   text-decoration: none;
 }
+.header-inside-img ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.latest-funding-content ul {
+  list-style: none;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding: 16px 16px 8px 16px;
+  font-size: 14px;
+}
+.responsive-grid ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: baseline;
+}
 .more-content > section > ul {
   padding: 0;
   margin: 0;
@@ -269,13 +289,6 @@ main {
   margin: 0;
   padding: 0;
   color: #aaa;
-}
-.responsive-grid ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  align-items: baseline;
 }
 .responsive-grid > li {
   padding-right: 16px;
@@ -350,13 +363,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-.latest-funding-content ul {
-  list-style: none;
-  border-top: 1px solid rgba(255, 68, 34, 0.25);
-  padding: 16px 16px 8px 16px;
-  font-size: 14px;
-}
-
 .small-text {
   color: #aaa;
 }
@@ -366,15 +372,6 @@ main {
   color: #f42;
   align-items: baseline;
 }
-.header-inside-img ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  font-size: 14px;
-  margin-top: 8px;
-}
-
 .header-inside-img ul li {
   padding-right: 8px;
 }
