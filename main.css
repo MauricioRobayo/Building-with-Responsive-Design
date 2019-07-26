@@ -335,6 +335,10 @@ main {
   padding: 0;
   margin: 0;
 }
+.more-content > section > ul > li > a {
+  color: #555;
+  text-decoration: none;
+}
 .header-inside-img ul li {
   padding-right: 8px;
 }
