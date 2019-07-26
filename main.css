@@ -166,6 +166,10 @@ main {
 .latest-funding-articles article {
   margin-right: 24px;
 }
+.latest-funding-articles > article {
+  margin: 0 0 18px 0;
+  height: auto;
+}
 .latest-funding-articles article:last-child {
   margin-right: 0px;
 }
@@ -665,10 +669,6 @@ main {
   }
   .latest-funding-articles {
     display: block;
-  }
-  .latest-funding-articles > article {
-    margin: 0 0 18px 0;
-    height: auto;
   }
   .more-content {
     grid-template-columns: 1fr;
