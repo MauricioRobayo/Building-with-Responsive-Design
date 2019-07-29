@@ -1,0 +1,710 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: grid;
+  grid-template-columns: 106px 1fr;
+  grid-template-rows: 32px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+}
+nav a {
+  color: #999;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-column-start: span 2;
+}
+#secondary-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 48px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secondary-nav-left {
+  display: flex;
+}
+.secondary-menu {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+nav > ul {
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  padding-left: 16px;
+}
+.mobile-buttons {
+  background: white;
+  height: 48px;
+}
+.nav-mob-toggle {
+  position: relative;
+}
+.nav-mob-toggle span {
+  transition: 0.4s;
+  background-color: #f42;
+  display: block;
+  height: 2px;
+  left: 14px;
+  margin-top: -1px;
+  position: absolute;
+  top: 24px;
+  width: 20px;
+}
+.latest-funding-content > a > span {
+  margin-left: 8px;
+}
+.nav-mob-toggle span:first-child {
+  transform: translateY(-6px);
+}
+.nav-mob-toggle span:last-child {
+  transform: translateY(6px);
+}
+.tnw-logo {
+  width: 106px;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  grid-row-start: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tnw-logo img {
+  width: 66px;
+  height: 48px;
+}
+.icon {
+  height: 16px;
+  width: 16px;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
+  display: inline-block;
+}
+.search-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #eee;
+}
+.search-icon {
+  background-position: -832px -832px;
+  border-left: 1px solid #eee;
+  width: 16px;
+  height: 16px;
+}
+.icon--tag--dark {
+  background-position: -976px -976px;
+}
+.icon--briefcase--dark {
+  background-position: -48px -48px;
+}
+.icon--facebook--light {
+  background-position: -272px -272px;
+}
+.icon--twitter--light {
+  background-position: -1024px -1024px;
+}
+.icon--youtube--light {
+  background-position: -1280px -1280px;
+}
+.icon--instagram--light {
+  background-position: -416px -416px;
+}
+.icon--pinterest--light {
+  background-position: -672px -672px;
+}
+.icon--rss--light {
+  background-position: -816px -816px;
+}
+.icon--email--light {
+  background-position: -576px -576px;
+}
+.hamburger-menu {
+  height: 48px;
+  width: 48px;
+  border-left: 1px solid #eee;
+}
+main {
+  width: 100%;
+}
+#main-content-wrapper {
+  max-width: 1152px;
+  margin: auto;
+  padding: 18px;
+}
+#featured-articles {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  grid-gap: 8px;
+  margin: 8px;
+}
+.more-content-feature-article article {
+  display: flex;
+  justify-content: space-between;
+}
+.more-content-main-article article {
+  position: relative;
+}
+.latest-funding-articles > article {
+  flex: 1 1 100%;
+  background-color: rgb(255, 250, 248);
+  margin: 0 0 18px 0;
+  height: auto;
+}
+.latest-funding-articles article {
+  margin-right: 24px;
+}
+.responsive-grid li article {
+  display: flex;
+}
+.latest-funding-articles article:last-child {
+  margin-right: 0px;
+}
+#featured-articles article {
+  box-sizing: border-box;
+  position: relative;
+}
+#featured-article-image-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoinsv-796x448.jpg);
+  background-size: cover;
+}
+#featured-article-image-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/moralbehavior1200B-796x417.png);
+  background-size: cover;
+}
+#featured-article-image-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/deliveroo2-796x448.jpg);
+  background-size: cover;
+}
+.featured-article-image {
+  height: 143.5px;
+  overflow: hidden;
+}
+.featured-article-image img {
+  max-width: 100%;
+}
+#featured-articles article:first-child .featured-article-image {
+  height: 295px;
+}
+#featured-articles article:first-child {
+  grid-row-start: span 2;
+}
+.header-inside-img h5,
+.header-inside-img h3 {
+  margin: 0;
+}
+.header-inside-img h3 {
+  font-size: 20px;
+}
+#featured-articles article:first-child h3 {
+  font-size: 36px;
+}
+.more-content-feature-article h4 {
+  margin-top: 5px;
+}
+.investment-card-funding h4 {
+  margin: 0;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.responsive-grid li h4 {
+  margin: 8px 0;
+}
+.header-inside-img a {
+  color: white;
+  text-decoration: none;
+}
+.latest-funding-content > a {
+  padding: 8px 16px 0 16px;
+}
+.latest-funding-articles a {
+  color: rgb(85, 85, 85);
+  text-decoration: none;
+}
+.responsive-grid a {
+  text-decoration: none;
+  color: #aaa;
+}
+.responsive-grid li h4 a {
+  color: black;
+  text-decoration: none;
+}
+.header-inside-img ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.latest-funding-content ul {
+  list-style: none;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding: 16px 16px 8px 16px;
+  font-size: 14px;
+}
+.responsive-grid ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: baseline;
+}
+.more-content > section > ul {
+  padding: 0;
+  margin: 0;
+}
+.more-content > section > ul > li > a {
+  color: #555;
+  text-decoration: none;
+}
+.responsive-grid a:hover {
+  color: #555;
+}
+.responsive-grid li h4 a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+.responsive-grid {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #aaa;
+}
+.responsive-grid > li {
+  padding-right: 16px;
+  margin-bottom: 16px;
+}
+.responsive-grid ul li {
+  padding-right: 16px;
+}
+.more-content-feature-article-img-wrapper {
+  width: 96px;
+  height: 96px;
+  flex: 0 0 96px;
+  overflow: hidden;
+}
+.more-content-feature-article-img-wrapper img {
+  height: 96px;
+  margin-left: -40px;
+}
+.latest-funding-header {
+  position: relative;
+  margin-bottom: 8px;
+}
+.latest-funding-header img {
+  margin: 10.6666666667px;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  left: 0;
+}
+.responsive-grid li img:first-child {
+  height: 141px;
+  max-width: 282px;
+  background-size: cover;
+  background-position: center;
+}
+.latest-deals .responsive-grid li img {
+  height: 185px;
+}
+.list-price {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.discount-price {
+  color: #555;
+}
+#latest-deals-header {
+  display: flex;
+  justify-content: space-between;
+  color: #f42;
+  align-items: baseline;
+}
+.latest-funding-articles {
+  display: flex;
+}
+.investment-card-name {
+  color: white;
+  background-color: orangered;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  font-size: 20px;
+  margin: 0;
+}
+.investment-card-funding {
+  background: rgba(255, 68, 34, 0.08);
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+}
+.investment-card-funding h5 {
+  margin: 0;
+  opacity: 0.5;
+}
+.latest-funding-content {
+  display: flex;
+  flex-direction: column;
+}
+.small-text {
+  color: #aaa;
+}
+#investment-card-header {
+  display: flex;
+  justify-content: space-between;
+  color: #f42;
+  align-items: baseline;
+}
+.header-inside-img ul li {
+  padding-right: 8px;
+}
+#investment-card-header ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px;
+  margin-right: 0;
+}
+#social-media-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  list-style: none;
+}
+#social-media-links a {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+  box-sizing: border-box;
+}
+#social-media-links li {
+  padding: 8px;
+}
+#footer-link-list li {
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style: none;
+}
+#footer-link-list li a {
+  color: #aaa;
+  text-decoration: none;
+}
+#footer-link-list li a:hover {
+  color: white;
+  text-decoration: none;
+}
+.footer-legal-logoTNW {
+  width: 37px;
+  height: 14px;
+}
+.footer-legal-logoStackPath {
+  width: 65px;
+  height: 14px;
+  margin-left: 8px;
+}
+#investment-card-header ul li {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: solid;
+}
+#investment-card-header li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+#investment-card-header h4 {
+  margin-bottom: 18px;
+  font-size: 28px;
+}
+#investment-card-header h4::after {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  background-size: 16px 16px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  content: "";
+  margin-left: 4px;
+}
+.more-content-main-article,
+.more-content-feature-article {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#more-content-image-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/slack-ram-memory-faster-performance-desktop-368x276.jpg);
+  height: 295px;
+  background-size: cover;
+}
+#more-content-image-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/feat-1-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+#more-content-image-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Xbox-Update-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/AI-autocompleter-368x276.png");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/chineseverticalB1200-368x276.png");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/800x600_businessman_covering_ears_gosphotodesign_22525853-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-7 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+#more-content-image-8 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85)),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/GTA-Online-Casino-368x276.jpg");
+  height: 295px;
+  background-size: cover;
+}
+
+.header-inside-img {
+  color: white;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  margin-right: 8px;
+}
+.more-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.latest h2::after {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  background-size: 16px 16px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  content: "";
+  margin-left: 4px;
+}
+.more-content section h2::after {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  background-size: 16px 16px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  content: "";
+  margin-left: 4px;
+}
+.more-content-title {
+  text-decoration: none;
+  color: #f42;
+  font-size: 28px;
+}
+.more-content-feature-article {
+  background-color: rgba(255, 68, 34, 0.06);
+  color: #f42;
+}
+.more-content-feature-article header {
+  margin: 16px;
+}
+.more-content-feature-article h5 {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.more-content-headline {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding: 6px 0 6px 14px;
+  color: #555;
+  list-style: none;
+}
+.more-content-headline::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  position: relative;
+  display: block;
+  height: 4px;
+  right: 15px;
+  top: 10px;
+  width: 4px;
+}
+.latest h2 {
+  color: #f42;
+}
+#footer-link {
+  background: #131313;
+}
+#footer-link-list {
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-size: 70%;
+}
+#footer-legal {
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+#footer-legal span {
+  padding-left: 5px;
+}
+
+
+@media only screen and (min-width: 1025px) {
+  nav {
+    grid-template-columns: 1fr 48px;
+  }
+  .tnw-logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .responsive-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+  .latest-funding-articles article:nth-last-child(2) {
+    margin-right: 0;
+  }
+  .latest-funding-articles article:last-child {
+    display: none;
+  }
+  .more-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  #investment-card-header {
+    flex-direction: column;
+  }
+  #investment-card-header ul {
+    margin: 0;
+    margin-bottom: 32px;
+    padding-left: 0;
+  }
+  #investment-card-header ul li:first-child {
+    padding-left: 0;
+  }
+  .header-inside-img h3 {
+    font-size: 15px;
+  }
+  #featured-articles article:first-child h3 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav > ul,
+  .secondary-menu {
+    display: none;
+  }
+  .mobile-buttons {
+    display: flex;
+  }
+  .responsive-grid {
+    display: block;
+  }
+  .latest-funding-articles {
+    display: block;
+  }
+  .more-content {
+    grid-template-columns: 1fr;
+  }
+  #featured-articles {
+    grid-template-columns: 1fr;
+    grid-template-rows: 147.5px;
+  }
+  #featured-articles:first-child {
+    grid-row-start: span 1;
+  }
+  #featured-articles article:first-child {
+    grid-row-start: auto;
+  }
+  #featured-articles article:first-child .featured-article-image {
+    height: 147.5px;
+  }
+
+  .responsive-grid li article img {
+    object-fit: cover;
+  }
+  .responsive-grid > li > article > img:first-child,
+  .latest-deals .responsive-grid > li > article > img:first-child {
+    flex: 0 0 75px;
+    height: 75px;
+    margin-right: 16px;
+    width: 75px;
+  }
+  .responsive-grid > li h4 {
+    margin-top: 0;
+  }
+  #footer-legal {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
